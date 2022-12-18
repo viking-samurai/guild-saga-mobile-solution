@@ -1,0 +1,44 @@
+
+$base-color: #101320;
+$base-color2: #045cf0;
+$white: #fff;
+$body-color: #e8e8e8;
+$heading-color: #ffbd6f;
+$star-color: #fc9715;
+$bg-color1: #101320;
+$bg-color2: #0C0E16;
+$subheading-color: #BC333D;
+$accent-color: #ffbd6f;
+
+
+$facebook: #0069f7;
+$twitter: #00c6f7;
+$dribbble: #f7007a;
+$google-plus: #d1062c;
+$linkedin: #007bb5;
+
+
+
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Ubuntu:300,400,500,700|Poppins:300,400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento&display=swap');
+$body-font: 'Quattrocento', serif;
+$heading-font: 'Quattrocento', serif;
+//== font sizes
+$base-font-size: 18px !default;
+$font-size-h1: 60px !default;
+$font-size-h2: 48px !default;
+$font-size-h3: 22px !default;
+$font-size-h4: 22px !default;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height: 1.6 !default;
+// border-radius
+$border-radius-5: 5px !default;
+$border-radius-25: 25px !default;
+$border-radius-3: 3px !default;
+$border-radius-circle: 50% !default;
+//  transition
+$transition: all .3s ease-in;
+$transition-long: all .5s ease-in;

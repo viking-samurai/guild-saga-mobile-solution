@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guild Saga</title>
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Slider Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.4/dist/css/themes/splide-sea-green.min.css">
+
+	<!-- Main Stylesheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body onload="checkRoadmap()" class="frontpage">
+	<!-- Header Area Start  -->
+	<header class="header">
+		<!--Main-Menu Area Start-->
+		<div class="mainmenu-area">
+			<nav id class="navbar navbar-expand-lg navbar-light">
+				<!-- LEFT HEADER MENU -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_menu" aria-controls="main_menu" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#">
+					<img src="assets/images/logo.png" class="header-logo-collapsed" />
+				</a>
+				<div class="collapse navbar-collapse justify-content-center mx-auto" id="main_menu">
+					<ul class="navbar-nav navbar-nav-left">
+						<li class="nav-item">
+							<a id="goto-db" class="nav-link a" href="https://world.guildsaga.com/" target="_blank" rel="noopener">World Mode</a>
+						</li>
+						<li class="nav-item">
+							<a id="goto-nft" class="nav-link a">NFT</a>
+						</li>
+						<li class="nav-item">
+							<a id="goto-roadmap" class="nav-link a">Roadmap</a>
+						</li>
+					</ul>
+					<a class="navbar-brand" href="#">
+						<img src="assets/images/logo.png" class="header-logo-main" />
+					</a>
+					<ul class="navbar-nav navbar-nav-right">
+						<li class="nav-item">
+							<a id="" href="https://wiki.guildsaga.com/wiki/Guild_Saga_Lore_Wiki" target="_blank" class="nav-link a">Wiki</a>
+						</li>
+						<li class="nav-item">
+							<a id="goto-docs" class="nav-link a" href="https://docs.guildsaga.com" target="_blank" rel="noopener">Whitepaper</a>
+						</li>
+						<li class="nav-item">
+							<a id="goto-db" class="nav-link a" href="https://db.guildsaga.com/" target="_blank" rel="noopener">Database</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<!--Main-Menu Area Start-->
+	</header>
+	<!-- Header Area End  -->
+
+	<!-- Hero Area Start -->
+	<div id="home" class="hero-area">
+		<div class="row">
+			<div class="col-lg-12 justify-content-center hero-content">
+				<div class="hero-empty"></div>
+				<div class="row justify-content-center align-items-center hero-text">
+					A classic fantasy RPG integrated with the Solana blockchain
+				</div>
+				<div class="row justify-content-center align-items-center hero-links">
+					<!-- <a href="https://discord.gg/" class="hero-button" target="_blank">Trailer</a> -->
+					<a class="hero-button" href="https://play.guildsaga.com">Play Demo</a>
+                    <a class="hero-button goto-nft">NFT</a>
+					<a href="https://docs.guildsaga.com/" class="hero-button" target="_blank">Whitepaper</a>
+				</div>
+				<div class="row justify-content-center hero-socials">
+					<a href="https://www.youtube.com/channel/UCHGKEU8ojaRoGe3w_uUi_KQ" target="_blank">
+						<svg class="hero-social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12 2.76001C0.2064 2.76001 0 3.80881 0 12C0 20.1912 0.2064 21.24 12 21.24C23.7936 21.24 24 20.1912 24 12C24 3.80881 23.7936 2.76001 12 2.76001ZM15.846 12.4008L10.458 14.916C9.9864 15.1344 9.6 14.8896 9.6 14.3688V9.63121C9.6 9.11161 9.9864 8.86561 10.458 9.08401L15.846 11.5992C16.3176 11.82 16.3176 12.18 15.846 12.4008Z"/>
+						</svg>
+					</a>
+					<a href="https://twitter.com/guildsaga" target="_blank">
+						<svg version="1.1" class="hero-social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								viewBox="0 0 248 204" xml:space="preserve">
+							<g>
+								<path d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
+									C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
+									c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
+									c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
+									c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
+									c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"/>
+							</g>
+						</svg>
+					</a>
+					<a href="https://discord.gg/guildsaga" target="_blank">
+						<svg class="hero-social-icon" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.3175 1.49197C18.7875 0.801974 17.1475 0.291974 15.4325 0.0019736C15.4172 -0.000958481 15.4014 0.000931061 15.3872 0.00738094C15.3731 0.0138308 15.3613 0.0245219 15.3535 0.0379736C15.1435 0.406974 14.9095 0.887974 14.7455 1.26797C12.9266 0.99621 11.0774 0.99621 9.25848 1.26797C9.07582 0.846834 8.86983 0.436198 8.64148 0.0379736C8.63374 0.0243563 8.62203 0.0134234 8.60792 0.00663373C8.5938 -0.000155898 8.57795 -0.00247938 8.56248 -2.64893e-05C6.84848 0.289974 5.20848 0.799974 3.67748 1.49097C3.66431 1.4965 3.65314 1.50592 3.64548 1.51797C0.533481 6.09297 -0.319519 10.555 0.0994806 14.961C0.100647 14.9718 0.103996 14.9822 0.109326 14.9917C0.114655 15.0011 0.121853 15.0094 0.130481 15.016C1.94687 16.3384 3.97282 17.3458 6.12348 17.996C6.13847 18.0006 6.15451 18.0006 6.16949 17.9959C6.18448 17.9913 6.19772 17.9823 6.20748 17.97C6.66948 17.35 7.08148 16.695 7.43348 16.007C7.45448 15.967 7.43448 15.919 7.39248 15.903C6.74649 15.6597 6.12057 15.3661 5.52048 15.025C5.5097 15.0188 5.50061 15.0101 5.49404 14.9996C5.48746 14.989 5.48361 14.977 5.48281 14.9646C5.48202 14.9522 5.48432 14.9398 5.48949 14.9286C5.49467 14.9173 5.50257 14.9075 5.51248 14.9C5.63848 14.807 5.76448 14.71 5.88448 14.613C5.89528 14.6043 5.90829 14.5987 5.92207 14.5969C5.93584 14.5952 5.94983 14.5973 5.96248 14.603C9.88948 16.367 14.1425 16.367 18.0235 14.603C18.0362 14.5969 18.0503 14.5946 18.0643 14.5961C18.0782 14.5977 18.0915 14.6032 18.1025 14.612C18.2225 14.71 18.3475 14.807 18.4745 14.9C18.4845 14.9073 18.4925 14.917 18.4979 14.9282C18.5032 14.9394 18.5057 14.9517 18.5051 14.9641C18.5045 14.9765 18.5008 14.9885 18.4945 14.9991C18.4881 15.0098 18.4791 15.0186 18.4685 15.025C17.8705 15.369 17.2485 15.66 16.5955 15.902C16.5855 15.9056 16.5763 15.9114 16.5687 15.9188C16.5611 15.9263 16.5551 15.9353 16.5512 15.9452C16.5473 15.9551 16.5456 15.9658 16.5462 15.9764C16.5467 15.9871 16.5496 15.9975 16.5545 16.007C16.9145 16.694 17.3265 17.348 17.7795 17.969C17.7889 17.9817 17.802 17.9912 17.8171 17.9963C17.8321 18.0013 17.8483 18.0015 17.8635 17.997C20.0178 17.3486 22.0471 16.3408 23.8655 15.016C23.8744 15.0098 23.8818 15.0017 23.8873 14.9924C23.8928 14.9831 23.8963 14.9727 23.8975 14.962C24.3975 9.86797 23.0595 5.44197 20.3485 1.51997C20.3418 1.50723 20.3308 1.49729 20.3175 1.49197ZM8.02048 12.278C6.83848 12.278 5.86348 11.209 5.86348 9.89797C5.86348 8.58597 6.81948 7.51797 8.02048 7.51797C9.23048 7.51797 10.1965 8.59497 10.1775 9.89797C10.1775 11.21 9.22148 12.278 8.02048 12.278ZM15.9955 12.278C14.8125 12.278 13.8385 11.209 13.8385 9.89797C13.8385 8.58597 14.7935 7.51797 15.9955 7.51797C17.2055 7.51797 18.1715 8.59497 18.1525 9.89797C18.1525 11.21 17.2065 12.278 15.9955 12.278Z"/>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Trailer Area Start -->
+	<div>
+		<div class="container trailer-area">
+			<div class="row justify-content-center">
+				<div class="col-lg-10 d-flex align-self-center embed-responsive embed-responsive-16by9">
+					<iframe class="trailer" src="https://www.youtube-nocookie.com/embed/rffYJaPKbtg"
+					title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+					encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="nft" class="showcase">
+		<div class="container">
+			<div class="d-flex flex-row justify-content-center flex-wrap-reverse">
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="content">
+							<h2 style="text-transform: uppercase;" class="big-title">
+								Claim your Guild Hero
+							</h2>
+							<div class="subtitle big-title">
+								Play with your Hero in the upcoming fantasy RPG, Guild Saga!
+							</div>
+							<div class="text">
+								<ul>
+									<li>Detailed generative pixel art NFTs, with over 700 available traits, that can be used 
+                                        in the Solana-integrated version of Guild Saga.</li>
+									<li>Using a Hero NFT in game provides a significant earnings boost.</li>
+									<li>When not using them in game (and pre-release), players can send their Heroes on quests 
+                                        in World Mode to receive passive $GGLD, $GGEM, and loot (item NFTs). Try out World Mode 
+                                        now at <a href="world.guildsaga.com" target="_blank">world.guildsaga.com</a>.</li>
+								</ul>
+								<br>
+								<p>Get your Hero on 
+                                  <a href="https://www.magiceden.io/marketplace/guild_saga_heroes" target="_blank">Magic Eden</a>, 
+                                  <a href="https://solanart.io/collections/guildsaga" target="_blank">Solanart</a>
+                                  , or <a href="https://www.fractal.is/guildsaga" target="_blank">Fractal</a> NFT marketplaces.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row justify-content-center socials">
+						<a href="https://twitter.com/guildsaga" target="_blank">
+							<svg version="1.1" class="hero-social-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+									viewBox="0 0 248 204" xml:space="preserve">
+								<g>
+									<path d="M221.95,51.29c0.15,2.17,0.15,4.34,0.15,6.53c0,66.73-50.8,143.69-143.69,143.69v-0.04
+										C50.97,201.51,24.1,193.65,1,178.83c3.99,0.48,8,0.72,12.02,0.73c22.74,0.02,44.83-7.61,62.72-21.66
+										c-21.61-0.41-40.56-14.5-47.18-35.07c7.57,1.46,15.37,1.16,22.8-0.87C27.8,117.2,10.85,96.5,10.85,72.46c0-0.22,0-0.43,0-0.64
+										c7.02,3.91,14.88,6.08,22.92,6.32C11.58,63.31,4.74,33.79,18.14,10.71c25.64,31.55,63.47,50.73,104.08,52.76
+										c-4.07-17.54,1.49-35.92,14.61-48.25c20.34-19.12,52.33-18.14,71.45,2.19c11.31-2.23,22.15-6.38,32.07-12.26
+										c-3.77,11.69-11.66,21.62-22.2,27.93c10.01-1.18,19.79-3.86,29-7.95C240.37,35.29,231.83,44.14,221.95,51.29z"/>
+								</g>
+							</svg>
+						</a>
+						<a href="https://discord.gg/guildsaga" target="_blank">
+							<svg class="hero-social-icon" viewBox="0 0 24 18" xmlns="http://www.w3.org/2000/svg">
+								<path d="M20.3175 1.49197C18.7875 0.801974 17.1475 0.291974 15.4325 0.0019736C15.4172 -0.000958481 15.4014 0.000931061 15.3872 0.00738094C15.3731 0.0138308 15.3613 0.0245219 15.3535 0.0379736C15.1435 0.406974 14.9095 0.887974 14.7455 1.26797C12.9266 0.99621 11.0774 0.99621 9.25848 1.26797C9.07582 0.846834 8.86983 0.436198 8.64148 0.0379736C8.63374 0.0243563 8.62203 0.0134234 8.60792 0.00663373C8.5938 -0.000155898 8.57795 -0.00247938 8.56248 -2.64893e-05C6.84848 0.289974 5.20848 0.799974 3.67748 1.49097C3.66431 1.4965 3.65314 1.50592 3.64548 1.51797C0.533481 6.09297 -0.319519 10.555 0.0994806 14.961C0.100647 14.9718 0.103996 14.9822 0.109326 14.9917C0.114655 15.0011 0.121853 15.0094 0.130481 15.016C1.94687 16.3384 3.97282 17.3458 6.12348 17.996C6.13847 18.0006 6.15451 18.0006 6.16949 17.9959C6.18448 17.9913 6.19772 17.9823 6.20748 17.97C6.66948 17.35 7.08148 16.695 7.43348 16.007C7.45448 15.967 7.43448 15.919 7.39248 15.903C6.74649 15.6597 6.12057 15.3661 5.52048 15.025C5.5097 15.0188 5.50061 15.0101 5.49404 14.9996C5.48746 14.989 5.48361 14.977 5.48281 14.9646C5.48202 14.9522 5.48432 14.9398 5.48949 14.9286C5.49467 14.9173 5.50257 14.9075 5.51248 14.9C5.63848 14.807 5.76448 14.71 5.88448 14.613C5.89528 14.6043 5.90829 14.5987 5.92207 14.5969C5.93584 14.5952 5.94983 14.5973 5.96248 14.603C9.88948 16.367 14.1425 16.367 18.0235 14.603C18.0362 14.5969 18.0503 14.5946 18.0643 14.5961C18.0782 14.5977 18.0915 14.6032 18.1025 14.612C18.2225 14.71 18.3475 14.807 18.4745 14.9C18.4845 14.9073 18.4925 14.917 18.4979 14.9282C18.5032 14.9394 18.5057 14.9517 18.5051 14.9641C18.5045 14.9765 18.5008 14.9885 18.4945 14.9991C18.4881 15.0098 18.4791 15.0186 18.4685 15.025C17.8705 15.369 17.2485 15.66 16.5955 15.902C16.5855 15.9056 16.5763 15.9114 16.5687 15.9188C16.5611 15.9263 16.5551 15.9353 16.5512 15.9452C16.5473 15.9551 16.5456 15.9658 16.5462 15.9764C16.5467 15.9871 16.5496 15.9975 16.5545 16.007C16.9145 16.694 17.3265 17.348 17.7795 17.969C17.7889 17.9817 17.802 17.9912 17.8171 17.9963C17.8321 18.0013 17.8483 18.0015 17.8635 17.997C20.0178 17.3486 22.0471 16.3408 23.8655 15.016C23.8744 15.0098 23.8818 15.0017 23.8873 14.9924C23.8928 14.9831 23.8963 14.9727 23.8975 14.962C24.3975 9.86797 23.0595 5.44197 20.3485 1.51997C20.3418 1.50723 20.3308 1.49729 20.3175 1.49197ZM8.02048 12.278C6.83848 12.278 5.86348 11.209 5.86348 9.89797C5.86348 8.58597 6.81948 7.51797 8.02048 7.51797C9.23048 7.51797 10.1965 8.59497 10.1775 9.89797C10.1775 11.21 9.22148 12.278 8.02048 12.278ZM15.9955 12.278C14.8125 12.278 13.8385 11.209 13.8385 9.89797C13.8385 8.58597 14.7935 7.51797 15.9955 7.51797C17.2055 7.51797 18.1715 8.59497 18.1525 9.89797C18.1525 11.21 17.2065 12.278 15.9955 12.278Z"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<img src="assets/images/showcase.gif" class="showcase_gif" />
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="features parallax">
+		<div class="container">
+			<div class="d-flex flex-lg-row justify-content-center single-feature flex-wrap">
+				<div class="col-lg-10 content">
+					<h3 class="title">Combat</h3>
+					<p style="margin-left: 0;" class="text">
+						Guild Saga features turn-based, tactics-style combat heavily inspired
+						by classics like Final Fantasy Tactics and Tactics Ogre as well as modern
+						CRPGs like Divinity: Original Sin and Pillars of Eternity.
+					</p>
+				</div>
+				<div class="col-lg-2">
+					<img class="icon" src="assets/images/1-COMBAT.png" alt="" />
+				</div>
+			</div>
+			<div class="d-flex flex-lg-row justify-content-center single-feature flex-wrap-reverse">
+				<div class="col-lg-2">
+					<img class="icon" src="assets/images/2-OPEN_WORLD.png" alt="" />
+				</div>
+				<div class="col-lg-10 content">
+					<h3 class="title">Open World</h3>
+					<p style="margin-left: 0;" class="text">
+						Guild Saga takes full advantage of the opportunities that blockchain integration provides to incentivize exploration.
+            			Plenty of (tokenized) treasure, quests, and easter eggs lay concealed across Guild Saga’s sprawling open world,
+						ready for discovery by only the most inquisitive adventurers.
+					</p>
+				</div>
+			</div>
+			<div class="d-flex flex-lg-row justify-content-center single-feature flex-wrap">
+				<div class="col-lg-10 content">
+					<h3 class="title">Play-to-Earn Mechanics</h3>
+					<p style="margin-left: 0;" class="text">
+						In Guild Saga, players have true ownership over the fruits of their in-game
+						achievements. Players earn tokens and tokenized (NFT) loot across three
+						primary modes: a lengthy single player story, a gauntlet-style PVE arena, and a PVP ranked ladder.
+					</p>
+				</div>
+				<div class="col-lg-2">
+					<img class="icon" src="assets/images/3-PLAY_TO_EARN_MECHANICS.png" alt="" />
+				</div>
+			</div>
+			<div class="d-flex flex-lg-row justify-content-center single-feature flex-wrap-reverse">
+				<div class="col-lg-2">
+					<img class="icon" src="assets/images/4-STORY.png" alt="" />
+				</div>
+				<div class="col-lg-10 content">
+					<h3 class="title">Story</h3>
+					<p style="margin-left: 0;" class="text">
+						The story of Guild Saga is thoughtfully written with branching dialogue
+						and meaningful decision-making. A lowly member of the Heroes Guild, the
+						player character is surprised when they are selected as a field agent to
+						journey to the Andra, a young continent where mysterious and destructive
+						occurrences are transpiring beyond the bounds of civilization.
+					</p>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+
+	<div class="d-flex flex-lg-row justify-content-center single-feature flex-wrap">
+		<div class="col-lg-8 content text-center">
+			<h2 class="center-title">Game-ready NFTs randomly generated from over 700 possible traits!</h2>
+			<div class="text">
+				Guild Hero NFTs have 18 attributes, with the inventory view background colour indicating their 
+                quality (common, uncommon, rare, etc). The border of each NFT indicates its overall rarity 
+				level, determined by summing the quality of each item.
+			</div>
+        </div>
+		<div class="col-lg-10 content text-center">
+			<section class="splide" aria-label="Splideの基本的なHTML">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_0.png"></li>
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_1.png"></li>
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_2.png"></li>
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_3.png"></li>
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_4.png"></li>
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_5.png"></li>
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_6.png"></li>
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_7.png"></li>
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_8.png"></li>
+                        <li class="splide__slide"><img class="slider-image" src="assets/images/gallery_9.png"></li>
+                    </ul>
+                </div>
+            </section>
+		</div>
+	</div>
+	
+
+	<!-- ROADMAP START -->
+        <!--Start of title layer.  'Title Layer' is the bottom layer.  Contains: Title image, Glyph layers-->
+        <div class="title-layer">
+            <div id="roadmap" class="roadmap-layer">
+				<h1 style="margin: 0;" class="center-title">Roadmap</h1>
+                <div class="roadmap-columns">
+                    <section class="roadmap-column">
+                        <h2 style="margin-bottom: 0; font-size: 40px;" class="center-title">GAME</h2>
+                        <ul class="roadmap-list" id="game-column">
+                            <li style="border: none; background: none;" class="roadmap-list-item-header triggered"></li>
+                            <li id="item1" class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/game-images/extended-gameplay-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Extended Gameplay Video</h4>
+                                            <div tabindex="-1" class="check-circle event-complete">
+                                                <input type="checkbox" checked id="checkbox1" />
+                                                <label for="checkbox1"></label>
+                                            </div>
+                                        </div>
+                                        <h5 class="prida-font release-date-info">July 2022</h5>
+                                        <p class="roadmap-list-item-paragraph keepCalm-font">An extended gameplay video of the opening part of the 
+                                            Tales of Respite demo, showcasing character creation, NFT import, dialogue, battles, quests, cinematic 
+                                            events, exploration, looting, and more.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="item2" class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/game-images/closed-alpha-build-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Story Mode Alpha</h4>
+                                            <div tabindex="-1" class="check-circle event-complete">
+                                                <input type="checkbox" checked id="checkbox2" />
+                                                <label for="checkbox2"></label>
+                                            </div>
+                                        </div>
+                                        <h5 class="prida-font release-date-info">August 2022</h5>
+                                        <p class="roadmap-list-item-paragraph keepCalm-font">A playable web build featuring approximately 1 hour of Story 
+                                            mode gameplay.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="item3" class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/game-images/PVE-arena-mode.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Arena Mode Alpha</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox3" />
+                                                <label for="checkbox3"></label>
+                                            </div>
+                                        </div>
+                                        <h5 class="prida-font release-date-info">Q1 2023</h5>
+                                        <p class="roadmap-list-item-paragraph">A public alpha for Guild Saga's roguelike gauntlet mode, where players 
+                                            fight through waves of progressively more difficult rounds of enemies across a variety of battlefields.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="item4" class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/game-images/talesOfRespite-demo.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Tales of Respite</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox4" />
+                                                <label for="checkbox4"></label>
+                                            </div>
+                                        </div>                                               
+                                        <h5 class="prida-font release-date-info">TBD</h5>
+                                        <p class="roadmap-list-item-paragraph">A feature-complete 10 hour + demo showcasing the opening Act 
+                                            of the game, Tales of Respite. In addition to providing users with an early look at the game, 
+                                            Tales of Respite will serve as the game's beta: a testing environment aimed at effective skill 
+                                            balancing, detecting bugs, studying earning patterns, and soliciting feedback on game features 
+                                            and mechanics.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="item7" class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/game-images/PVP-mode-alpha.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">PVP Mode Alpha</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox7" />
+                                                <label for="checkbox7"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">TBD</h5>
+                                        <p class="roadmap-list-item-paragraph">In the PVP mode, players compete against each other in four-on-four battles 
+                                            (with one player controlling all four characters on each side) on battlefields 
+                                            similar to those in the single-player arena mode.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="roadmap-column">
+                        <h2 style="margin-bottom: 0; font-size: 40px;" class="center-title">WORLD MODE</h2>
+                        <ul class="roadmap-list" id="worldMode-column">
+                            <li style="border: none; background: none;" class="roadmap-list-item-header triggered"></li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images//roadmap-images/worldMode-images/heroesGuild-(NFTstaking)-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Heroes Guild (NFT Staking)</h4>
+                                            <div tabindex="-1" class="check-circle event-complete">
+                                                <input type="checkbox" checked id="checkbox9" />
+                                                <label for="checkbox9"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">May 2022</h5>
+                                        <p class="roadmap-list-item-paragraph">At the Heroe's Guild, holders of a Hero NFT can send their Hero on quests.  
+                                            While on a quest, Heroes will earn $GGLD, $GGEM, and loot (item NFTs).</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/worldMode-images/blacksmith-(NFTcrafting)-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Blacksmith (NFT Crafting)</h4>
+                                            <div tabindex="-1" class="check-circle event-complete">
+                                                <input type="checkbox" checked id="checkbox10" />
+                                                <label for="checkbox10"></label>
+                                            </div>
+                                        </div>
+                                        <h5 class="prida-font release-date-info">October 2022</h5>
+                                        <p class="roadmap-list-item-paragraph">At the blacksmith, users can combine loot/item NFTs.  The item NFTs used 
+                                            to craft are burned and the user receives a new, higher-level item in their place.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/worldMode-images/dismantleIcon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Dismantling (NFT Deconstruction)</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox11" />
+                                                <label for="checkbox11"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">Q4 2022</h5>
+                                        <p class="roadmap-list-item-paragraph">Break down specific item NFTs to receive crafting materials at the 
+                                            Blacksmith.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/worldMode-images/professionQuests.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Profession Quests</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox11" />
+                                                <label for="checkbox11"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">Q1 2023</h5>
+                                        <p class="roadmap-list-item-paragraph">Send your Heroes on mining, fishing, and woodcutting quests, which require 
+                                            specific item (tool) NFTs to complete, and which reward players predetermined crafting material yields.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/worldMode-images/townSquare-(NFTmarketplace)-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Town Square (Item and Mercenary NFT Marketplace)</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox11" />
+                                                <label for="checkbox11"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">Q2 2023</h5>
+                                        <p class="roadmap-list-item-paragraph">The town square is the Newacre's marketplace.  Here, users can purchase and 
+                                            sell loot and mercenary NFTs on Guild Saga's $GGLD token marketplace.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/worldMode-images/catacombs-(mercenaryNFTsummoning)-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Catacombs (Mercenary NFT Summoning)</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox12" />
+                                                <label for="checkbox12"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">Q2 2023</h5>
+                                        <p class="roadmap-list-item-paragraph">At the Catacombs, players can summon Mercenary NFTs using $GGLD, $GGEM, 
+                                            and a Mercenary catalyst.  A Hero NFT is also required to act as the summoner, but is not consumed.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/worldMode-images/playersKeep-(baseBuilding)-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Player's Keep (Base-building and Quests)</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox14" />
+                                                <label for="checkbox14"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">TBD</h5>
+                                        <p class="roadmap-list-item-paragraph">Players can build up their Keep and its defenses with custom upgrades
+                                            and Mercenaries, and enter auto-battles against other nearby keeps to earn rewards. A Keep NFT, which 
+                                            will set out the Keep's location and base attributes, will be mintable prior to launch.
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/worldMode-images/royalBank-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Royal Bank ($GGLD Staking)</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox15" />
+                                                <label for="checkbox15"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">TBD</h5>
+                                        <p class="roadmap-list-item-paragraph">At the Royal Bank, users can open a vault and deposit $GGLD.  Upon deposit, the $GGLD is locked up and 
+                                            earns the user passive $GGLD over time in an amount proportional to the amount staked.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="roadmap-column">
+                        <h2 style="margin-bottom: 0; font-size: 40px;" class="center-title">WEB</h2>
+                        <ul class="roadmap-list" id="web-column">
+                            <li style="border: none; background: none;" class="roadmap-list-item-header triggered"></li>
+                            
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/web-images/loreWiki-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Lore Wiki</h4>
+                                            <div tabindex="-1" class="check-circle event-complete">
+                                                <input type="checkbox" checked id="checkbox17" />
+                                                <label for="checkbox17"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">August 2022</h5>
+                                        <p class="roadmap-list-item-paragraph">A wiki detailing the lore of Guild Saga, including major characters, locations, factions, 
+                                            legends, and historical events.</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/web-images/itemDatabase-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Item Database</h4>
+                                            <div tabindex="-1" class="check-circle event-complete">
+                                                <input type="checkbox" checked id="checkbox16" />
+                                                <label for="checkbox16"></label>
+                                            </div>
+                                        </div>                                               
+                                        <h5 class="prida-font release-date-info">May 2022</h5>
+                                        <p class="roadmap-list-item-paragraph">A database of all Guild Saga items, including artwork, descriptions, and stats.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/web-images/skillDatabase-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Skill Database</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox18" />
+                                                <label for="checkbox18"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">Q4 2022</h5>
+                                        <p class="roadmap-list-item-paragraph">A database of all Guild Saga skills, talents, tools, and titles.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/web-images/heroDatabase-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Hero Database</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox19" />
+                                                <label for="checkbox19"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">TBD</h5>
+                                        <p class="roadmap-list-item-paragraph">A database of all Guild Saga Hero NFTs, including the Heroes' real power ranking and owner.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="roadmap-list-item">
+                                <div class="list-item-wrapper">
+                                    <img class="roadmap-image" src="assets/images/roadmap-images/web-images/heroProfilePictures-icon.png">
+                                    <div class="roadmap-list-item-text">
+                                        <div class="roadmap-checkbox-span">
+                                            <h4 class="keepCalm-font roadmap-list-item-title">Hero Profile Pictures</h4>
+                                            <div tabindex="-1" class="check-circle">
+                                                <input type="checkbox" checked id="checkbox20" />
+                                                <label for="checkbox20"></label>
+                                            </div>
+                                        </div>                                                
+                                        <h5 class="prida-font release-date-info">TBD</h5>
+                                        <p class="roadmap-list-item-paragraph">Guild Saga Hero profile pictures will be generated for each Hero NFT.  These images will 
+                                            be freely available for use in the Hero Database and not part of a seperate mint.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+	<!-- ROADMAP AREA END -->
+
+	<!-- 2ND FEATURES START -->
+	<div class="features">
+		<div class="container">
+		<div class="d-flex flex-lg-row justify-content-center single-feature flex-wrap">
+			<div class="col-lg-10 content text-center">
+				<div class="row justify-content-center">
+					<img class="big-icon" src="assets/images/8-Customization2x.gif" alt="" />
+				</div>
+				<h3 class="center-title">Fully-Customizable Character</h3>
+				<div class="center-text">
+					Select gender, skin tone, eye colour, and hairstyle in Guild Saga’s
+					flexible character creator. Changes to clothing, head equipment, back
+					equipment, boots, and weapons are visible on the in-game character—all thanks to tens of thousands of hand-drawn sprites by
+					our world-class Lead Pixel Artist.
+				</div>
+			</div>
+		</div>
+		<div class="d-flex flex-lg-row justify-content-center single-feature flex-wrap">
+			<div class="col-lg-10 content text-center">
+				<div class="row justify-content-center">
+					<img class="big-icon" src="assets/images/9-Guilds_Banner3x.png" alt="" />
+				</div>
+				<h3 class="center-title">Guilds</h3>
+				<div class="center-text">
+					Players can band together in Guilds and complete guild-specific quests
+					to earn tokens for themselves and their guild’s treasury. Guild wars
+					provide players with the opportunity to pillage the coffers of rival
+					guilds through PVP battles.
+				</div>
+			</div>
+		</div>
+		<div class="d-flex flex-lg-row justify-content-center single-feature flex-wrap">
+			<div class="col-lg-10 content text-center">
+				<div class="row justify-content-center">
+					<img class="big-icon" src="assets/images/10-Builds-Spells-slow.gif" alt="" />
+				</div>
+				<h3 class="center-title">Diverse Build Potential</h3>
+				<div class="center-text">
+					Players can mix and match skills from 10 different schools to create unique
+					builds and execute powerful skill combinations.
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- FEATURES END -->
+
+	<!-- FOOTER START -->
+	<!-- Footer -->
+	<footer class="footer" id="footer">
+		<div class="copy-bg">
+			<div class="container">
+				<div class="footer-row">
+					<div class="col-lg-9">
+						<div class="left-area">
+							<p>COPYRIGHT © 2022. GUILD SAGA. ALL RIGHTS RESERVED.</p>
+						</div>
+					</div>
+					<!-- SOCIALS -->
+					<div>
+						<ul class="social-media-links">
+                            <li class="social-media-link">
+                                <a href="https://twitter.com/guildsaga" target="_blank">
+                                    <img src="assets/images/twitter.svg" width="24" />
+                                </a>
+                            </li>
+                            <li class="social-media-link">
+                                <a href="https://discord.gg/guildsaga" target="_blank">
+                                    <img src="assets/images/discord.svg" width="24" />
+                                </a>
+                            </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- FOOTER END -->
+
+	<!-- Back to Top Start -->
+	<div class="bottomtotop">
+		<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		viewBox="0 0 490.037 490.037" class="up_arrow" xml:space="preserve">
+			<path d="M91.483,490.019l153.535-160.332l153.535,160.332l91.483-91.439l-69.81-72.906l69.81-69.775L245.019,0.019L0,255.898
+			l69.81,69.775L0,398.58L91.483,490.019z M42.905,255.434L245.019,44.346l202.114,211.089l-48.1,48.07L245.019,142.678
+			L91.004,303.504L42.905,255.434z M245.019,187.02l202.114,211.081l-48.1,48.085L245.019,285.345L91.004,446.186l-48.1-48.085
+			L245.019,187.02z"/>
+		</svg>
+		<i class="fas fa-chevron-right"></i>
+	</div>
+	<!-- Back to Top End -->
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+
+	<!-- Slider -->
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.4/dist/js/splide.min.js"></script>        
+
+	<!-- Main -->
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/aos.js"></script>
+</body>
+
+</html>

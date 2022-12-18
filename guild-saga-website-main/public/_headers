@@ -1,0 +1,6 @@
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+/assets/*
+  Access-Control-Allow-Origin: *
+  X-Robots-Tag: nosnippet

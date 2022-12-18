@@ -1,0 +1,208 @@
+
+// Import bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// Sass Global
+@import "main/variables";
+@import "main/mixins";
+@import "main/normalize";
+@import "main/animation";
+@import "main/global";
+
+// Sass Sections
+@import "sections/_header";
+@import "sections/_footer";
+
+// Sass page
+@import "pages/_home-page";
+@import "pages/_roadmap";
+@import "pages/_about";
+@import "pages/_fourzero";
+@import "pages/_faq";
+//@import "pages/_roadmap";
+
+body{
+  background: $bg-color1;
+  overflow: hidden;
+}
+
+.parallax {
+  height: 100%;
+  background-image: linear-gradient(180deg, 
+  #101320AA, #101320FF), url("../images/parallax_backdrop.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Gallery Slider Overrides
+.splide__pagination__page {
+  display: none;
+  &.is-active {
+    display: none;
+  }
+}
+.splide__pagination__page:hover {
+  display: none;
+  cursor: pointer;
+  opacity:.9;
+}
+.splide__arrow {
+  svg {
+    fill: $subheading-color;
+  }
+}
+.splide__arrow:hover {
+  svg {
+    fill: $accent-color;
+  }
+}
+
+.trailer-area {
+  margin: 5em auto;
+}
+
+.mybtn1, .mybtn2{
+  //background: linear-gradient(90deg, #FC384C 0%, #B31A2A 100%) !important;
+  box-shadow: 0px 0px 10px #FC384C;
+}
+
+/*.header-logo{
+  //width: 175px;
+
+  @media only screen and (min-width: 960px) {
+    width: 250px;
+  }
+  //@media (max-width:991.98px){
+  //  display: none;
+  //}
+}*/
+
+/*
+.hero-area{
+  .links .mybtn1{
+    height: 48px;
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  h5.subtitle{
+    font-size: 24px !important;
+  }
+}
+*/
+
+.roadmap li{
+  list-style: initial;
+  margin-left: 20px;
+}
+
+.qty {
+  display: inline-block;
+  float: left;
+  padding: 4px 10px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.3);
+  background: #f9314b;
+}
+.qty ul li {
+  display: inline-block;
+}
+.qty ul li:first-child {
+  margin-left: 0px;
+}
+.qty ul li .qttotal,
+.qty ul li .qtminus,
+.qty ul li .qtplus {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #fff;
+  transition: all 0.3s ease-in;
+}
+.qty ul li .qtminus:hover,
+.qty ul li .qtplus:hover {
+  color: #f9314b;
+}
+.qty ul li .qttotal:focus,
+.qty ul li .qtminus:focus,
+.qty ul li .qtplus:focus {
+  outline: 0px;
+}
+.qty ul li .qttotal {
+  width: 150px;
+}
+
+.alert{
+  border: none;
+  border-radius: 50px;
+}
+
+.alert-danger{
+  background: #ff344d;
+  color: white;
+}
+
+.alert-success{
+  background: #6dfbc2;
+  color: black;
+}
+
+.serch-area{
+  background: transparent;
+}
+
+html.newsletter{
+  html,body,.hero-area, .lottery-area{
+    background: #000721;
+    text-align: center;
+  }
+
+  .hero-area,
+  .lottery-area{
+    padding-bottom: 0;
+  }
+  
+  @media (max-width: 769px) {
+    .hero-area{
+      padding-top: 0;
+    }
+  }
+
+  .daily-lottery{
+    padding: 0;
+  }
+
+  .serch-area{
+    background: transparent;
+  }
+
+  .sub-title{
+    display: flex;
+    justify-content: center;
+
+    div {
+      max-width: 450px;
+    }
+  }
+
+  .mybtn1{
+    height: 50px;
+  }
+
+  .socials a{
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .showcase{
+    width: 100%;
+  }
+}

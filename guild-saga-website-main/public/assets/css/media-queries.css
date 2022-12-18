@@ -1,0 +1,382 @@
+/*Cellphone*/
+@media only screen and (max-width: 640px) and (min-width: 360px)  {
+    .big-title{
+        text-align: center;
+    }
+
+    .title{
+        text-align: left;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 400px;
+        margin: 3% auto !important;
+    }
+
+    .text{
+        text-align: left;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 500px;
+        margin: 1em;
+    }
+
+    .icon{
+        display: none;
+    }
+
+    .hero-empty{
+        height: 14em !important;
+    }
+    
+    .hero-button{
+        margin: 0em;
+    }
+
+    .showcase{
+        margin-bottom: 2em !important;
+    }
+    
+    .showcase_gif{
+        max-width: 20em;
+    }
+
+    .slider-div{
+        width: 20em;
+    }
+    
+    .slider-image{
+        height: 16em;
+    }
+    
+    .roadmap-columns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .roadmap-column{
+        max-width: 24em;
+        margin: auto;
+    }
+
+    .roadmap-list-item{
+        width: 18em;
+    }
+
+    .roadmap-title{
+        font-size: 4.4rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .roadmap-header{
+        font-size: 3rem;
+        font-weight: 600;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #game-column:before{
+        height: calc(100% - 4.8em);
+    }
+    
+    #worldMode-column:before{
+        height: calc(100% - 6.8em);
+    }
+    
+    #web-column:before{
+        height: calc(100% - 5.4em);
+    }
+
+    .footer-note{
+        width: 80%;
+    }
+}
+
+
+
+/*Small tablet media queries*/
+
+@media only screen and (max-width: 800px) and (min-width: 641px)  {
+    .big-title{
+        text-align: center;
+    }
+    
+    .title{
+        text-align: left;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 600px;
+    }
+
+    .text{
+        text-align: left;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 700px;
+        margin: auto 3em;
+    }
+
+    .hero-empty{
+        height: 16em !important;
+    }
+
+    .icon{
+        display: none;
+    }
+    
+    .hero-button{
+        margin: 0;
+    }
+    
+    .showcase_gif{
+        max-width: 20em;
+    }
+
+    .slider-div{
+        width: 30em;
+    }
+    
+    .slider-image{
+        height: 16em;
+    }
+    
+    .roadmap-columns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .roadmap-column{
+        max-width: 30em;
+        margin: auto;
+    }
+
+    .roadmap-list-item{
+        width: 25em;
+    }
+
+    .roadmap-title{
+        font-size: 5rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .roadmap-header{
+        font-size: 3.2rem;
+        font-weight: 600;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #game-column:before{
+        height: calc(100% - 4em);
+    }
+    
+    #worldMode-column:before{
+        height: calc(100% - 4.4em);
+    }
+    
+    #web-column:before{
+        height: calc(100% - 4em) !important;
+    }
+
+    .footer-note{
+        width: 80%;
+    }
+}
+
+
+
+/*Large tablet media queries*/
+
+@media only screen and (max-width: 1099px) and (min-width: 768px)  {
+    .hero-empty{
+        height: 20em !important;
+    }
+    
+    .icon{
+        display: none;
+    }
+
+    .showcase_gif{
+        max-width: 20em;
+    }
+
+    .slider-div{
+        margin: auto;
+    }
+    
+    .roadmap-columns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .roadmap-column{
+        width: 32em;
+        margin: auto;
+    }
+
+    .roadmap-list-item{
+        width: 28em;
+    }
+
+    .roadmap-title{
+        font-size: 5rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .roadmap-header{
+        font-size: 3.2rem;
+        font-weight: 600;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #game-column:before{
+        height: calc(100% - 3.5em);
+    }
+    
+    #worldMode-column:before{
+        height: calc(100% - 4.2em);
+    }
+    
+    #web-column:before{
+        height: calc(100% - 3.5em);
+    }
+
+    .footer-note{
+        width: 80%;
+    }
+
+    .policy-list{
+        text-align: left;
+    }
+}
+
+
+
+/*Standard 15" laptop queries below*/
+
+@media only screen and (max-width: 1366px) and (min-width: 1100px)  {
+    .hero-empty{
+        height: 22em !important;
+    }
+
+    .slider-div{
+        margin: auto;
+    }
+    
+    .roadmap-columns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .roadmap-column{
+        width: 36em;
+        margin: auto;
+    }
+
+    .roadmap-list-item{
+        width: 28em;
+    }
+
+    .roadmap-title{
+        font-size: 5rem;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    .roadmap-header{
+        font-size: 3.2rem;
+        font-weight: 600;
+        margin: auto;
+        margin-top: 1em;
+    }
+
+    #game-column:before{
+        height: calc(100% - 3.5em);
+    }
+    
+    #worldMode-column:before{
+        height: calc(100% - 4em);
+    }
+    
+    #web-column:before{
+        height: calc(100% - 3.5em);
+    }
+}
+
+
+
+/*Standard 17"+ laptop queries below*/
+
+@media only screen and (max-width: 1605px) and (min-width: 1370px)  {
+    .hero-empty{
+        height: 20em !important;
+    }
+
+    .slider-div{
+        margin: auto;
+    }
+
+    .center-title{
+        text-align: center;
+        margin: 1em auto auto auto;
+    }
+    
+    .roadmap-column{
+        width: 24em;
+    }
+
+    .roadmap-title{
+        font-size: 5rem;
+        font-weight: 600;
+    }
+    
+    .roadmap-header{
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    #game-column:before{
+        height: calc(100% - 5em);
+        left: .6em !important;
+    }
+    
+    #worldMode-column:before{
+        height: calc(100% - 6em);
+        left: .6em !important;
+    }
+    
+    #web-column:before{
+        height: calc(100% - 5em);
+        left: .6em !important;
+    }
+
+    .roadmap-list-item{
+        width: 22em !important;
+    }
+
+    .roadmap-list-item:before{
+        left: -2.5em;
+    }
+
+    .roadmap-list-item:after{
+        left: -1.9em;
+    }
+
+    .roadmap-list-item-header:before{
+        left: -2.4em;
+    }
+
+    .roadmap-list-item-header:after{
+        left: -1.8em;
+    }
+
+    .roadmap-list-item-text{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1em;
+        max-width: 20em;
+    }
+}

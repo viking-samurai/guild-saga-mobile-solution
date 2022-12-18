@@ -1,0 +1,126 @@
+
+/* Header Area Start */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    /* Main Menu Area Start */  
+    .mainmenu-area{
+        //background: rgba(255,255,255,0);
+        transition: background 0.5s ease 0s;
+        &.opaque {
+            background: $bg-color2;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+            border-bottom: 2px solid $subheading-color;
+            transition: background 0.5s ease 0s;
+        }
+        // Only for smaller screens
+        @media (max-width: 991.98px) {
+            // Always show opaque header
+            background: $bg-color2;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+            border-bottom: 2px solid $subheading-color;
+        }
+        .navbar {
+            //padding: 0px 0px;
+            position: relative;
+
+            // Menu style for only large screen
+            @media (min-width: 991.98px) {
+                min-height: 100px; 
+            }
+            // Stack logo on top of menu items
+            //@media only screen and (min-width: 960px) {
+            //    flex-direction: column;
+            //}
+            
+            .navbar-brand {
+                padding: 0px;
+                margin: 0px;
+                display: block;
+                // Collapsed Menu, main logo, show top logo
+                @media (max-width: 991.97px) {
+                    .header-logo-collapsed {
+                        width: 175px;
+                    }
+                    .header-logo-main {
+                        display: none;
+                    }
+                }
+                @media (min-width: 991.98px) {
+                    position: absolute;
+                    left: 50%;
+                    transform: translatex(-50%);
+                    .header-logo-collapsed {
+                        display: none;
+                    }
+                    .header-logo-main {
+                        transition: width 0.5s ease 0s;
+                        width: 280px;
+                        text-align: center;
+                    
+                        //@media only screen and (min-width: 960px) {
+                        //  width: 250px;
+                        //}
+                        //@media (max-width:991.98px){
+                        //  display: none;
+                        //}
+                        &.scrolled-down {
+                            width: 175px;
+                            transition: width 0.5s ease 0s;
+                        }
+                    }
+                }   
+            }
+            #main_menu {
+                .navbar-nav {
+                    // Menu style for only large screen
+                    @media (min-width: 991.98px) {
+                        &.navbar-nav-left {
+                            position: absolute;
+                            left: 50%;
+                            transform: translatex(-510px);
+                        }
+                        &.navbar-nav-right {
+                            position: absolute;
+                            left: 50%;
+                            transform: translatex(130px);
+                        }
+                    }
+                    .nav-item {
+                        .nav-link {
+                            color: $accent-color;
+                            line-height: 26px;
+                            font-size: 16px;
+                            font-weight: 600;
+                            padding: 47px 27px;
+                            cursor: pointer;
+                            text-transform: uppercase;
+
+                            &.active {
+                                color: #FFFFFF;
+                            }
+                            &:hover {
+                                color: #FFFFFF;
+                            }
+
+                            // Mobile collapsable menu
+                            @media (max-width: 991.98px) {
+                                padding: 0px;
+                            }
+                            
+                        }
+                        // Mobile collapsable menu
+                        @media (max-width: 991.98px) {
+                            padding: 20px 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
